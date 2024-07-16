@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("convention-plugins/base")
     repositories {
         google()
         gradlePluginPortal()

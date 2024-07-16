@@ -1,6 +1,7 @@
 [versions]
 
 kotlin = "2.0.0"
+java = "8"
 compose = "1.6.10"
 agp = "8.2.2"
 androidx-activityCompose = "1.9.0"
@@ -12,6 +13,12 @@ kotlinx-serialization = "1.7.0-RC"
 kotlinx-datetime = "0.6.0"
 
 [libraries]
+
+# Plugins for composite build
+gradleplugin-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+gradleplugin-compose = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "compose" }
+gradleplugin-composeCompiler = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "compose" }
+gradleplugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 androidx-testManifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "androidx-uiTest" }
