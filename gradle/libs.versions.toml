@@ -1,6 +1,11 @@
 [versions]
 
+minSdk = "24"
+targetSdk = "34"
+compileSdk = "34"
+
 kotlin = "2.0.0"
+javaConvention = "11"
 java = "8"
 compose = "1.6.10"
 agp = "8.2.2"

@@ -17,7 +17,7 @@ dependencies {
     implementation(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
 }
 
-private val projectJavaVersion: JavaVersion = JavaVersion.toVersion(libs.versions.java.get())
+private val projectJavaVersion: JavaVersion = JavaVersion.toVersion(libs.versions.javaConvention.get())
 
 java {
     sourceCompatibility = projectJavaVersion
