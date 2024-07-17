@@ -1,8 +1,9 @@
+import io.github.dmitriy1892.conventionplugins.base.extensions.iosRegularFramework
 import org.jetbrains.compose.ExperimentalComposeLibrary
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-    alias(libs.plugins.multiplatform)
+    id("kmp.base.config")
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.compose)
     alias(libs.plugins.android.application)
@@ -13,21 +14,6 @@ plugins {
 }
 
 kotlin {
-    androidTarget()
-
-    jvm()
-
-    listOf(
-        iosX64(),
-        iosArm64(),
-        iosSimulatorArm64()
-    ).forEach {
-        it.binaries.framework {
-            baseName = "ComposeApp"
-            isStatic = true
-        }
-    }
-
     sourceSets {
         commonMain.dependencies {
             implementation(project(":shared-uikit"))
@@ -70,6 +56,11 @@ kotlin {
         }
 
     }
+}
+
+iosRegularFramework {
+    baseName = "ComposeApp"
+    isStatic = true
 }
 
 android {
