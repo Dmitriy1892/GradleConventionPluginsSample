@@ -4,6 +4,9 @@ minSdk = "24"
 targetSdk = "34"
 compileSdk = "34"
 
+appVersionCode = "1"
+appVersionName = "1.0.0"
+
 kotlin = "2.0.0"
 javaConvention = "11"
 java = "8"
@@ -20,6 +23,8 @@ kotlinx-datetime = "0.6.0"
 [libraries]
 
 # Plugins for composite build
+gradleplugin-base = { module = "io.github.dmitriy1892.conventionplugins:base" }
+
 gradleplugin-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 gradleplugin-compose = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "compose" }
 gradleplugin-composeCompiler = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "compose" }

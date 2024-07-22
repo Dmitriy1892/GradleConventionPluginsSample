@@ -5,7 +5,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "io.github.dmitriy1892.conventionplugins.base"
+group = "io.github.dmitriy1892.conventionplugins"
 
 dependencies {
     implementation(libs.gradleplugin.android)

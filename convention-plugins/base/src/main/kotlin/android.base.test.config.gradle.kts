@@ -1,21 +1,6 @@
 import com.android.build.api.dsl.ManagedVirtualDevice
 import io.github.dmitriy1892.conventionplugins.base.extensions.androidConfig
-import io.github.dmitriy1892.conventionplugins.base.extensions.debugImplementation
-import io.github.dmitriy1892.conventionplugins.base.extensions.implementation
-import io.github.dmitriy1892.conventionplugins.base.extensions.kotlinAndroidTarget
 import io.github.dmitriy1892.conventionplugins.base.extensions.libs
-import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSetTree
-
-kotlinAndroidTarget {
-    instrumentedTestVariant {
-        sourceSetTree.set(KotlinSourceSetTree.test)
-
-        dependencies {
-            debugImplementation(libs.androidx.testManifest)
-            implementation(libs.androidx.junit4)
-        }
-    }
-}
 
 androidConfig {
     defaultConfig {

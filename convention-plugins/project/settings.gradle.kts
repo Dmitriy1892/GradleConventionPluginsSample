@@ -25,4 +25,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "base"
+rootProject.name = "project"
+
+includeBuild("../base")
