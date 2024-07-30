@@ -1,5 +1,4 @@
 pluginManagement {
-    includeBuild("convention-plugins/base")
     includeBuild("convention-plugins/project")
     repositories {
         google()

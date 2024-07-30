@@ -1,4 +1,4 @@
-import io.github.dmitriy1892.conventionplugins.base.extensions.commonMainDependencies
+import io.github.dmitriy1892.conventionplugins.project.extensions.commonMainDependencies
 
 plugins {
     id("kmp.compose.library.plugin")

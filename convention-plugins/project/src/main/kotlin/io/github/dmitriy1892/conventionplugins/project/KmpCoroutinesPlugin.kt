@@ -1,9 +1,9 @@
 package io.github.dmitriy1892.conventionplugins.project
 
-import io.github.dmitriy1892.conventionplugins.base.extensions.androidMainDependencies
-import io.github.dmitriy1892.conventionplugins.base.extensions.commonMainDependencies
-import io.github.dmitriy1892.conventionplugins.base.extensions.commonTestDependencies
-import io.github.dmitriy1892.conventionplugins.base.extensions.jvmMainDependencies
+import io.github.dmitriy1892.conventionplugins.project.extensions.androidMainDependencies
+import io.github.dmitriy1892.conventionplugins.project.extensions.commonMainDependencies
+import io.github.dmitriy1892.conventionplugins.project.extensions.commonTestDependencies
+import io.github.dmitriy1892.conventionplugins.project.extensions.jvmMainDependencies
 import io.github.dmitriy1892.conventionplugins.base.extensions.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project

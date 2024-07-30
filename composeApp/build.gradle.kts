@@ -1,6 +1,6 @@
-import io.github.dmitriy1892.conventionplugins.base.extensions.commonMainDependencies
-import io.github.dmitriy1892.conventionplugins.base.extensions.iosRegularFramework
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+import io.github.dmitriy1892.conventionplugins.project.extensions.commonMainDependencies
+import io.github.dmitriy1892.conventionplugins.project.extensions.composeDesktopApplication
+import io.github.dmitriy1892.conventionplugins.project.extensions.iosRegularFramework
 
 plugins {
     id("kmp.compose.application.plugin")
@@ -12,7 +12,6 @@ plugins {
 
 commonMainDependencies {
     implementation(project(":shared-uikit"))
-
     implementation(libs.kotlinx.datetime)
 }
 
@@ -29,14 +28,7 @@ android {
     }
 }
 
-compose.desktop {
-    application {
-        mainClass = "MainKt"
-
-        nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "io.github.dmitriy1892.gradleconventionpuginssample.desktopApp"
-            packageVersion = "1.0.0"
-        }
-    }
-}
+composeDesktopApplication(
+    mainClass = "MainKt",
+    packageName = "io.github.dmitriy1892.gradleconventionpuginssample.desktopApp"
+)

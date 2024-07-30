@@ -1,5 +1,6 @@
-package io.github.dmitriy1892.conventionplugins.base.extensions
+package io.github.dmitriy1892.conventionplugins.project.extensions
 
+import io.github.dmitriy1892.conventionplugins.base.extensions.kotlinMultiplatformConfig
 import org.gradle.api.Project
 import org.jetbrains.kotlin.gradle.plugin.KotlinDependencyHandler
 
